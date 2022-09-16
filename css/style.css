@@ -138,16 +138,26 @@ body {
     color: var(--accent-link-color);
 }
 
-.contact-item .link {
-    display: block;
+.mail-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-mail,
+.header-phone {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item .link{
     padding: 32px 0;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.2;
 }
 
-.contact-item .link:hover,
-.contact-item .link:focus {
+.contact-item :hover,
+.contact-item :focus {
     color: var(--accent-link-color)
 }
 
@@ -157,9 +167,21 @@ body {
 }
 /* Hero */
 .hero {
-    background-color: #2F303A;
-    text-align: center;
+    height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 200px 0;
+
+    background-color: #C4C4C4;
+    text-align: center;
+
+    background-image: linear-gradient(to right, 
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
 }
 
 .hero-title {
@@ -215,6 +237,25 @@ body {
     width: 270px;
 }
 
+.benefits-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: var(--primary-bg-color);
+}
+
+.icon-antenna,
+.icon-clock {
+    margin: 25px 0;
+}
+
+.icon-diagram {
+    margin: 33px 0;
+}
+
+.icon-astronaut {
+    margin: 30px 0;
+}
 .section-title {
     color: var(--secondary-text-color);
     font-weight: 700;
@@ -262,6 +303,7 @@ body {
 .staff .desc {
     font-size: 16px;
     line-height: 1.2;
+    margin-bottom: 16px;
 }
 
 .staff-item {
@@ -269,12 +311,46 @@ body {
 }
 
 .staff-wrap {
-    padding: 30px 0;
+    padding-top: 30px;
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 0px 0px 4px 4px;
 }
 
+.staff-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.staff-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.instagram {
+    background-image: url(../images/instagram-2.svg);
+}
+
+.twitter {
+    background-image: url(../images/twitter\ 1.svg);
+}
+
+.facebook {
+    background-image: url(../images/facebook\ 1.svg);
+}
+
+.linkedin {
+    background-image: url(../images/linkedin\ 1.svg);
+}
+.staff-links-list .staff-links-item+ .staff-links-item {
+    margin-left: 10px;
+}
 /* Footer */
 .footer {
     background-color: var(--additional-bg-color);
